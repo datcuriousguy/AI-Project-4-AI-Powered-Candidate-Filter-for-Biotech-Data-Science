@@ -1,0 +1,2 @@
+- `pdfplumber`  (for keyword analysis within a supplied pdf)
+- `openai` (To access GPT-4 or GPT-3.5-turbo API)
