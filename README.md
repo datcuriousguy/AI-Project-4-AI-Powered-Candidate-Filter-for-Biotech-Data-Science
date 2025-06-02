@@ -9,3 +9,8 @@ We require someone who has expertise in using software to analyze trends in biol
 ## No Training Required
 
 Because we are planning to use the freely available APIs of OpenAI’s pre-trained models (given our own custom prompts), we do not need the *data_creation.py* file
+
+## Files
+
+- requirements.md
+- main.py
