@@ -1,2 +1,5 @@
 - `pdfplumber`  (for keyword analysis within a supplied pdf)
 - `openai` (To access GPT-4 or GPT-3.5-turbo API)
+- `python-dotenv` (Securely load the API key)
+- `pandas` (structured csv exports - optional)
+- `nltk`  (for keyword matching)
