@@ -21,8 +21,14 @@ which are yet to create as of now:
 load_dotenv()
 OPENAI_API_KEY = os.getenv("XXX")
 
-# Path to PDF resume
+# Path to PDF resume (not relevant yet)
 resume_path = "sample_resumes/candidate1.pdf"
 
 # Step 1: Extract text from PDF
 resume_text = extract_text_from_pdf(resume_path)
+
+# Generating target or related keywords for the role
+keywords = generate_keywords_for_biotech_ds_role(OPENAI_API_KEY)
+
+# Check keyword relevance
+report = check_relevance(resume_text, keywords)
