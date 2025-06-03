@@ -1,7 +1,5 @@
 import os
 from dotenv import load_dotenv
-import os
-from dotenv import load_dotenv
 from resume_parser import extract_text_from_pdf
 
 """
@@ -10,6 +8,14 @@ generate_keywords_for_biotech_ds_role().
 
 """
 #from keyword_generator import generate_keywords_for_biotech_ds_role
+
+"""
+
+The same applies to the relevance_checker.py in which exists check_relevance() self defined function,
+which are yet to create as of now:
+"""
+
+#from relevance_checker import check_relevance
 
 # Load API key from .env
 load_dotenv()
