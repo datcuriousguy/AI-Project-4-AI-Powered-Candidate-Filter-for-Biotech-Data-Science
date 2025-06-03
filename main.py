@@ -32,3 +32,7 @@ keywords = generate_keywords_for_biotech_ds_role(OPENAI_API_KEY)
 
 # Check keyword relevance
 report = check_relevance(resume_text, keywords)
+
+"""
+Note: we are yet to create the files in the import statements
+"""
