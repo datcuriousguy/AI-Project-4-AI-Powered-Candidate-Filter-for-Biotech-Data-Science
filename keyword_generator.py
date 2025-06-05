@@ -70,4 +70,17 @@ Return it as a plain Python list of strings.
      returns I will make sure its a list." since this is an
      adaptation with some risk of an un-evaluable format being
      returned, we can use the try-except clause to adapt.
+
+     the except clause is an attempt to hopefully correct the output if it isnt
+     a list as expected. for example, if it is a bulleted list, it may contain
+     dashes (-) in which case, we would need to eliminate them, hence the
+     line.strip("- ").lower() and lower case is preferred here.
+
+     Now we can adapte to handle various scenarios like 
+
+     ["keyword1", "keyword2"]
+     - keyword1\n
+     - keyword2\n...
+
+     and forces everything into a list [keyword1, keyword2, ...]
     """
