@@ -29,3 +29,23 @@ List 20 must-have skills or keywords you expect to see in a strong candidate's r
 Return it as a plain Python list of strings.
 """
 
+
+    """
+    Note: 'temperature' in this sense refers to how much 'creativity' or 'randomness' is 
+    required in the output.
+    
+    0.0 would be safe and boring.
+    1.0 would be a comedian / artist on steroids
+    
+    So we chosose the average 0.5
+    """
+
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",  # the free-tier
+        messages=[
+            {"role": "system", "content": "You are a helpful AI recruiter assistant."},
+            {"role": "user", "content": prompt}   # this prompt is written above.
+        ],
+        temperature=0.5
+    )
+
