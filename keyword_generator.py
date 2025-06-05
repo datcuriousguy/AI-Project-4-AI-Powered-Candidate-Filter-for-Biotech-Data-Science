@@ -83,4 +83,11 @@ Return it as a plain Python list of strings.
      - keyword2\n...
 
      and forces everything into a list [keyword1, keyword2, ...]
-    """
+
+     forcing a lowercase format makes text matching later easier, since we're comparing against lowercased resume text.
+     """
+
+    # lowercase for resume text comparisons in the check_relevance(resume_text, keywords) function.
+    return [kw.lower() for kw in keywords]
+
+
