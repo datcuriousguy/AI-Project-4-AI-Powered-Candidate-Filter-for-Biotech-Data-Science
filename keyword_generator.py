@@ -49,3 +49,12 @@ Return it as a plain Python list of strings.
         temperature=0.5
     )
 
+    """
+    The 'content' object represents the text returned by the model.
+    the 0 index is the first response, from the set it would output,
+    as we only require one.
+    
+    If the model returns a list like  ["python", "bioinformatics", "pandas", ...] then
+    eval() turns it into a python list. 
+
+    """
