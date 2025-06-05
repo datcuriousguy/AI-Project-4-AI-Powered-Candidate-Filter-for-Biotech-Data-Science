@@ -49,7 +49,7 @@ Return it as a plain Python list of strings.
         temperature=0.5
     )
 
- 
+
     content = response.choices[0].message.content
 
     # Try to safely parse list-like response
@@ -57,3 +57,17 @@ Return it as a plain Python list of strings.
         keywords = eval(content)
     except:
         keywords = [line.strip("- ").lower() for line in content.splitlines() if line.strip()]
+
+    """
+     The 'content' object represents the text returned by the model.
+     the 0 index is the first response, from the set it would output,
+     as we only require one.
+
+     If the model returns a list like  ["python", "bioinformatics", "pandas", ...] then
+     eval() turns it into a python list. 
+
+     Think of eval(content) as "No matter what format the model
+     returns I will make sure its a list." since this is an
+     adaptation with some risk of an un-evaluable format being
+     returned, we can use the try-except clause to adapt.
+    """
