@@ -24,3 +24,11 @@ response (many are possible.)
 """
 
 response = generator(prompt, max_length=100, num_return_sequences=1)
+
+"""
+Note the 0 index isn't really necessary as its just one response.
+"""
+
+print(response[0]["generated_text"])
+
+
