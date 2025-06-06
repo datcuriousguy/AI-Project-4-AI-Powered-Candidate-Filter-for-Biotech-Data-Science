@@ -12,3 +12,7 @@ what we require, and the model specifies that we need the gpt2
 model (small GPT-2 model with about 124M parameters):
 """
 generator = pipeline("text-generation", model="gpt2")
+
+"""this is what we are inputting into the model, the prompt. its asking for the relevant keywords:"""
+
+prompt = "List 15 key technical skills for a Data Scientist in Biotechnology."
