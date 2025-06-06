@@ -14,20 +14,19 @@ Openai's chat API requires two things:
 import openai
 
 def generate_keywords_for_biotech_ds_role(api_key):
-    openai.api_key = """some secret key which you will neeeeever knoooow"""
-
+    client = openai.OpenAI(api_key="MY API KEY")
     prompt = """
-We are a biotechnology company looking to hire someone at the intersection of Bioinformatics and Data Science.
+    We are a biotechnology company looking to hire someone at the intersection of Bioinformatics and Data Science.
 
-List 20 must-have skills or keywords you expect to see in a strong candidate's resume. Include a mix of:
-- Bio data analysis
-- Machine learning or AI
-- Genetic sequence analysis
-- Python libraries
-- Lab data handling
+    List 20 must-have skills or keywords you expect to see in a strong candidate's resume. Include a mix of:
+    - Bio data analysis
+    - Machine learning or AI
+    - Genetic sequence analysis
+    - Python libraries
+    - Lab data handling
 
-Return it as a plain Python list of strings.
-"""
+    Return it as a plain Python list of strings.
+    """
 
 
     """
@@ -40,7 +39,7 @@ Return it as a plain Python list of strings.
     So we chosose the average 0.5
     """
 
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",  # the free-tier
         messages=[
             {"role": "system", "content": "You are a helpful AI recruiter assistant."},
@@ -86,8 +85,10 @@ Return it as a plain Python list of strings.
 
      forcing a lowercase format makes text matching later easier, since we're comparing against lowercased resume text.
      """
-
+    print([kw.lower() for kw in keywords])
     # lowercase for resume text comparisons in the check_relevance(resume_text, keywords) function.
     return [kw.lower() for kw in keywords]
+
+generate_keywords_for_biotech_ds_role(api_key="MY API KEY")
 
 
