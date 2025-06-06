@@ -16,3 +16,11 @@ generator = pipeline("text-generation", model="gpt2")
 """this is what we are inputting into the model, the prompt. its asking for the relevant keywords:"""
 
 prompt = "List 15 key technical skills for a Data Scientist in Biotechnology."
+
+"""
+asks for the output to be a minimum of 100 tokens (like 75-100 words) and
+num_return_sequences = 1 simply asks the model to generate just one
+response (many are possible.)
+"""
+
+response = generator(prompt, max_length=100, num_return_sequences=1)
