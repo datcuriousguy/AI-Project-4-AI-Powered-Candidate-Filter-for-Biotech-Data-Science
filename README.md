@@ -12,8 +12,8 @@ Because we are planning to use the freely available APIs of OpenAI’s pre-train
 
 ## Files
 
-- requirements.md
-- main.py
-- resume_parser.py
-- keyword_generator.py
-- relevance_checker.py
+- `requirements.md`
+- `main.py`
+- `resume_parser.py`
+- `keyword_generator.py`
+- `relevance_checker.py`
