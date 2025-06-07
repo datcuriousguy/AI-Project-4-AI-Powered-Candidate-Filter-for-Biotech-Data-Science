@@ -14,3 +14,4 @@ Because we are planning to use the freely available APIs of OpenAI’s pre-train
 
 - requirements.md
 - main.py
+- resume_parser.py
