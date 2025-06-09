@@ -14,3 +14,5 @@ import yake
 # defining the kw function (20 is the number of most similar keywords to return.)
 
 def generate_keywords_from_resume(text, top_n=20):
+    # using yake's keywordExtractor function to get english keywords that consist of one word (n) and 20 most relevant ones.
+    kw_extractor = yake.KeywordExtractor(lan="en", n=1, top=top_n)
