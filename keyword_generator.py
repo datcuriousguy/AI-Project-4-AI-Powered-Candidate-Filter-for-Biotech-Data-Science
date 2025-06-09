@@ -10,3 +10,7 @@ went to the bar this weekend.
 """
 
 import yake
+
+# defining the kw function (20 is the number of most similar keywords to return.)
+
+def generate_keywords_from_resume(text, top_n=20):
