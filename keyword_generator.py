@@ -17,3 +17,6 @@ def generate_keywords_from_resume(text, top_n=20):
     # using yake's keywordExtractor function to get english keywords that consist of one word (n) and 20 most relevant ones.
     kw_extractor = yake.KeywordExtractor(lan="en", n=1, top=top_n)
     # get a list of tuples containing each of the 20 top keywords and their own individual similarity score.
+    keywords_with_scores = kw_extractor.extract_keywords(text)
+    # collecting the keywords without the scores. We only care about the kwywords not necessarily their rank.
+    keywords = [kw for kw, score in keywords_with_scores]
