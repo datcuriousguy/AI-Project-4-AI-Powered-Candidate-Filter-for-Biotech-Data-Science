@@ -7,32 +7,3 @@ Note: keyword_generator is a .py file we create in which there exists a function
 generate_keywords_for_biotech_ds_role().
 
 """
-#from keyword_generator import generate_keywords_for_biotech_ds_role
-
-"""
-
-The same applies to the relevance_checker.py in which exists check_relevance() self defined function,
-which are yet to create as of now:
-"""
-
-#from relevance_checker import check_relevance
-
-# Load API key from .env
-load_dotenv()
-OPENAI_API_KEY = os.getenv("XXX")
-
-# Path to PDF resume (not relevant yet)
-resume_path = "sample_resumes/candidate1.pdf"
-
-# Step 1: Extract text from PDF
-resume_text = extract_text_from_pdf(resume_path)
-
-# Generating target or related keywords for the role
-keywords = generate_keywords_for_biotech_ds_role(OPENAI_API_KEY)
-
-# Check keyword relevance
-report = check_relevance(resume_text, keywords)
-
-"""
-Note: we are yet to create the files in the import statements
-"""
