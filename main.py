@@ -6,3 +6,5 @@ Note: keyword_generator is a .py file we create in which there exists a function
 generate_keywords_for_biotech_ds_role().
 
 """
+def main():
+    resume_path = "the_resume.pdf"
