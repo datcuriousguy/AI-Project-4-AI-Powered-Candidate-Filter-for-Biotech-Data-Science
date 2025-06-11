@@ -20,3 +20,4 @@ def generate_keywords_from_resume(text, top_n=20):
     keywords_with_scores = kw_extractor.extract_keywords(text)
     # collecting the keywords without the scores. We only care about the kwywords not necessarily their rank.
     keywords = [kw for kw, score in keywords_with_scores]
+    return keywords
