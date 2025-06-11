@@ -7,4 +7,8 @@ generate_keywords_for_biotech_ds_role().
 
 """
 def main():
-    resume_path = "the_resume.pdf"
+    resume_path = "Elena00_resume.pdf"
+    resume_text = extract_text_from_pdf(resume_path)
+    print(resume_text)
+
+main()
