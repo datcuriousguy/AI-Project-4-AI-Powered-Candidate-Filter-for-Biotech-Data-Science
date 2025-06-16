@@ -1,5 +1,6 @@
 from resume_parser import extract_text_from_pdf
 from keyword_generator import generate_keywords_from_resume
+from relevance_checker import check_relevance
 
 """
 Note: keyword_generator is a .py file we create in which there exists a function
@@ -12,5 +13,6 @@ def main():
     print(resume_text)
     keywords = generate_keywords_from_resume(resume_text)
     print(keywords)
+
 
 main()
