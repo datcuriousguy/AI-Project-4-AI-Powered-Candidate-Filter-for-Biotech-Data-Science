@@ -1,0 +1,36 @@
+C:\Users\Daniel\PycharmProjects\NN_Projects\.venv\Scripts\python.exe "C:\Users\Daniel\AppData\Roaming\JetBrains\PyCharmCE2024.3\scratches\AI PROJECT 4\main.py" 
+CropBox missing from /Page, defaulting to MediaBox
+resume text: dr elena marquez
+senior data scientist and plant biologist
+location davis california | ph 5551234567 | email elena.marquez@botdatasci.com
+linkedin www.linkedin.com/in/elenamarquez | website www.botdatasci.com
+professional summary
+data scientist with a biology background, working on integrating omics data for crop improvement and
+environmental resilience.
+professional experience
+senior data scientist | greengenomics inc | jan 2020 present
+developed cloudbased dashboards for agronomists to visualize plant performance metrics.
+integrated omics datasets for yield modeling.
+collaborated with scientists on field deployment using cloud platforms.
+plant biology analyst | agribiotech solutions | aug 2016 dec 2019
+performed statistical analysis on genomic data from droughttolerant crops.
+published multiple research papers in crop science and environmental biology.
+education
+phd in plant biology | university of california davis | 2016
+thesis integrative genomics approaches for improving crop stress tolerance
+bsc in computational biology | university of washington | 2011
+technical skills
+programming python r sql bash
+tools tensorflow pandas matplotlib docker git
+data genomics phenomics satellite data
+platforms aws google cloud jupyter
+
+
+
+CropBox missing from /Page, defaulting to MediaBox
+keywords: ['data', 'scientist', 'biology', 'plant', 'professional', 'email', 'linkedin', 'elenamarquez', 'website', 'senior', 'background', 'working', 'resilience', 'crop', 'omics', 'elena', 'marquez', 'biologist', 'location', 'summary']
+
+
+relevance: {'matched': ['data', 'scientist', 'biology', 'plant', 'professional', 'email', 'linkedin', 'elenamarquez', 'website', 'senior', 'background', 'working', 'resilience', 'crop', 'omics', 'elena', 'marquez', 'biologist', 'location', 'summary'], 'missing': [], 'score': 1.0}
+
+Process finished with exit code 0
