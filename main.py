@@ -13,6 +13,8 @@ def main():
     print(f'resume text: {resume_text}\n\n')
     keywords = generate_keywords_from_resume(resume_text)
     print(f'keywords: {keywords}\n\n')
+    relevance = check_relevance(resume_text)
+    print(f'relevance: {relevance}')
 
 
 main()
