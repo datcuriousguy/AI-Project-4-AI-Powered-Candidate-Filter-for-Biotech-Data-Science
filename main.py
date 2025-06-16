@@ -10,6 +10,7 @@ def main():
     resume_path = "Elena00_resume.pdf"
     resume_text = extract_text_from_pdf(resume_path)
     print(resume_text)
+    keywords = generate_keywords_from_resume(resume_text)
+    print(keywords)
 
 main()
-# it runs!
