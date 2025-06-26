@@ -20,6 +20,6 @@ Because we are planning to use the freely available APIs of OpenAI’s pre-train
 
 ### Progress Update
 
-It is worth noting that since beginning this project, due to a large number of bottlenecks faced with openai’s GPT libraries (specifically them outputting completely unrelated keywords 😅), we have shifted to a much simpler relevance score checker now.
+It is worth noting that since beginning this project, due to a large number of bottlenecks faced with openai’s GPT libraries (specifically them outputting completely unrelated keywords 😅), we have shifted to a much simpler relevance score checker now. Note: you can see the details of what problems were faced by looking at commmits on and around commit 2758866.
 
 Possible AI integration in the future once I have time to focus on this project.
